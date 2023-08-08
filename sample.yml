@@ -10,6 +10,6 @@
 
     - name: start nginx
       ansible.builtin.systemd:
-        name: cron
+        name: nginx
         state: restarted
-        enable: yes
+        enabled: yes
