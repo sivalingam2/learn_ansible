@@ -5,11 +5,11 @@
     - name: install nginx
       ansible.builtin.systemd:
         name: nginx
-        state: latest
+        state: started
 
 
     - name: start nginx
       ansible.builtin.systemd:
         name: cron
-        state: started
+        state: restarted
         enable: yes
