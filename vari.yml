@@ -1,6 +1,5 @@
 - name: variable
   hosts: WEB
-  become: true
   vars:
     URL= google.com
   tasks:
