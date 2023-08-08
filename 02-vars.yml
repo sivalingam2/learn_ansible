@@ -1,8 +1,8 @@
 - name: variable
   hosts: WEB
   vars:
-     URL= google.com
+    url= google.com
   tasks:
-    - name: variable print
+    - name: print variable
       ansible.builtin.debug:
-        msg: URL = {{ URL }}
+        msg: url = {{ url }}
