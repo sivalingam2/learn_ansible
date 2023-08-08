@@ -11,5 +11,5 @@
     - name: start nginx
       ansible.builtin.systemd:
         name: cron
-        state: restart
+        state: restarted
         enable: yes
