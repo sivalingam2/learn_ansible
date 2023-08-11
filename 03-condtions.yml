@@ -1,0 +1,7 @@
+- name: conditions
+  hosts: all
+  connection: local
+  vars:
+    fruits: fruit - apple
+
+  - name
