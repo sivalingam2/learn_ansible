@@ -1,5 +1,5 @@
 - name: conditions
-  hosts: all
+  hosts: localhost
   connection: local
   vars:
     fruits: fruit - apple

@@ -1,11 +1,9 @@
 - name: install nginx
-  ansible.builtin.systemd:
-    name: nginx
-    state: started
-
-
-- name: start nginx
-  ansible.builtin.systemd:
-    name: nginx
-    state: restarted
-    enabled: yes
+  hosts: localhost
+  connection: local
+  vars:
+    url: play.google.com
+  tasks:
+    -name: print local variable
+    ansible.builtin.debug:
+      msg: tasks.google.com
